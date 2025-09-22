@@ -11,7 +11,7 @@ export default function Products() {
     const fetchProducts = async () => {
       try {
         const res = await axios.get(`https://fakestoreapi.com/products`);
-        setProducts(res.data);
+        setProducts(res.data.slice());
       } catch (error) {
         console.log("====================================");
         console.log("error fetching data", error);
