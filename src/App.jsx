@@ -5,13 +5,15 @@ import Home from './Components/Home/Home.jsx'
 import ErrorPath from './Components/eRRORpATH/ErrorPath.jsx'
 import Products from './Components/Products/Products.jsx'
 import Cart from './Components/Cart/Cart.jsx'
+import ItemDescription from './Components/ItemDescription/ItemDescription.jsx'
 
 
 export default function App() {
   const router = createBrowserRouter([
           {path:"", element:<Layout/>,children:[
             {index:true,element:<Home/>},
-            {path:"/products",element:<Products/>},
+            {path:"/product",element:<Products/>},
+            {path:"/product/:id",element:<ItemDescription/>},
             {path:"/cart",element:<Cart/>},
             {path:"*",element:<ErrorPath/>}
           ]}

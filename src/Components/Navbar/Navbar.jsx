@@ -16,7 +16,7 @@ export default function Navbar() {
           <NavLink className="nav-link text-light" aria-current="page" to={"/"}>Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link text-light" aria-current="page" to={"/products"}>Products</NavLink>
+          <NavLink className="nav-link text-light" aria-current="page" to={"/product"}>Products</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link text-light" aria-current="page" to={"/cart"}>Cart</NavLink>
