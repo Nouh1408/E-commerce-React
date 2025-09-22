@@ -22,7 +22,7 @@ export default function Products() {
   }, []);
 
   return (
-    <div>
+    <div className="mt-5 text-center">
       <h1>Products</h1>
       <div className="container">
         <div className="row">

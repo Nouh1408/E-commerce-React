@@ -1,10 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Navigate, useParams } from 'react-router-dom'
+import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import ErrorPath from '../eRRORpATH/ErrorPath.jsx';
 
 export default function ItemDescription() {
    const {id}=useParams()
+   const navigate = useNavigate()
    const [product, setProduct] = useState(null);
    
     useEffect(() => {
@@ -31,7 +32,10 @@ export default function ItemDescription() {
           <p>{product.description}</p>
           <h4>Price: EGP {product.price}</h4>
           <p><strong>Category:</strong> {product.category}</p>
-          <button className='btn btn-outline-success'>Add to Cart</button>
+          <div className='d-flex gap-3'>
+            <button className='btn btn-outline-success'>Add to Cart</button>
+            <button className='btn btn-outline-info' onClick={()=>{navigate('/cart')}}>View Cart</button>
+          </div>
         </div>
       </div>
     </div>
