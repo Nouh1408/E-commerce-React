@@ -36,7 +36,7 @@ export default function Products() {
                   style={{ height: "200px", objectFit: "contain" }}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">{product.title}</h5>
+                  <h5 className="card-title">{product.title.split(" ",3).join(" ")}</h5>
                   <p className="card-text">EGP {product.price}</p>
                   <button
                     className="btn btn-outline-success"
