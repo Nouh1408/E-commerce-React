@@ -33,7 +33,7 @@ export default function Home() {
       </div>
 
       {/* Featured Categories */}
-      <div className="container my-5">
+      <div className="container my-5 ">
         <h2 className="text-center mb-4">Shop by Category</h2>
         <div className="row text-center">
           <div className="col-md-3 mb-4">

@@ -31,6 +31,7 @@ export default function ItemDescription() {
           <p>{product.description}</p>
           <h4>Price: EGP {product.price}</h4>
           <p><strong>Category:</strong> {product.category}</p>
+          <button className='btn btn-outline-success'>Add to Cart</button>
         </div>
       </div>
     </div>
