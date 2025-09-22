@@ -8,7 +8,7 @@ import Cart from './Components/Cart/Cart.jsx'
 
 
 export default function App() {
-  const router =createBrowserRouter([
+  const router = createBrowserRouter([
           {path:"", element:<Layout/>,children:[
             {index:true,element:<Home/>},
             {path:"/products",element:<Products/>},

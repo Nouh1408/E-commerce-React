@@ -1,10 +1,10 @@
-/* import axios from "axios";
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
-  // const [cart, setCart] = useState([]);
+  
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -54,13 +54,5 @@ export default function Products() {
     </div>
   );
 }
- */
-import React from 'react'
 
-export default function Products() {
-  return (
-    <div>
-      <h2>Products Page</h2>
-    </div>
-  )
-}
+
