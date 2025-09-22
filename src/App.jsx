@@ -1,10 +1,13 @@
 import React from 'react'
-import Navba from './Components/Navbar/Navbar.jsx'
+import Navbar from './Components/Navbar/Navbar.jsx'
+import Products from './Components/Products/Products.jsx'
+
 
 export default function App() {
   return (
     <div>
-      <Navba/>
+      <Navbar/>
+      <Products/>
     </div>
   )
 }
