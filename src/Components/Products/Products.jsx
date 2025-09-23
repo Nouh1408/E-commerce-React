@@ -14,11 +14,9 @@ export default function Products() {
     const fetchProducts = async () => {
       try {
         const res = await axios.get(`https://fakestoreapi.com/products`);
-        if (location.pathname === "/") {
-          setProducts(res.data.slice(0, 8));
-        } else {
+        
           setProducts(res.data);
-        }
+        
       } catch (error) {
         console.log("====================================");
         console.log("error fetching data", error);

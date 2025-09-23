@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
      <div>
-      {/* Hero Section */}
+      
       <div className="bg-dark text-white text-center py-5 mb-4">
         <div className="container">
           <h1 className="display-4 fw-bold">Welcome to Our Store</h1>
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Featured Categories */}
+      
       <div className="container my-5 ">
         <h2 className="text-center mb-4">Shop by Category</h2>
         <div className="row text-center">
