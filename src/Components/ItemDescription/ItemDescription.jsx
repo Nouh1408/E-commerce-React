@@ -20,7 +20,7 @@ export default function ItemDescription() {
       fetchproduct()
     }, [id])
      if (!product) return <div>Loading...</div>;
-    
+
   return (
     <div className="container my-5">
       <div className="row">
