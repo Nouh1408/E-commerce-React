@@ -84,9 +84,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Product Section */}
+      
       <div className="container my-5" id="products">
-        <h2 className="text-center mb-4">Featured Products</h2>
         <Products />
       </div>
 </div>
