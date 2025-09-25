@@ -25,9 +25,6 @@ export default function App() {
         ]
       }
     ],
-    {
-      basename: "/E-commerce-React", 
-    }
   );
 
   return (
