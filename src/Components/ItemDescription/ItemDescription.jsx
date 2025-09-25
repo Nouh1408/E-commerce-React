@@ -33,7 +33,7 @@ export default function ItemDescription() {
           <h4>Price: EGP {product.price}</h4>
           <p><strong>Category:</strong> {product.category}</p>
           <div className='d-flex gap-3'>
-            <button className='btn btn-outline-success'>Add to Cart</button>
+            <button className='btn btn-outline-success' >Add to Cart</button>
             <button className='btn btn-outline-info' onClick={()=>{navigate('/cart')}}>View Cart</button>
           </div>
         </div>

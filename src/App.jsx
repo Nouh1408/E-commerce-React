@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Components/Layout/Layout.jsx'
 import Home from './Components/Home/Home.jsx'
@@ -9,6 +9,8 @@ import ItemDescription from './Components/ItemDescription/ItemDescription.jsx'
 
 
 export default function App() {
+  
+
   const router = createBrowserRouter([
           {path:"", element:<Layout/>,children:[
             {index:true,element:<Home/>},
