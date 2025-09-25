@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState, useContext } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import ErrorPath from '../eRRORpATH/ErrorPath.jsx';
+
 import { CartContext } from '../CartContext/CartContext.jsx';
 
 export default function ItemDescription() {
@@ -18,7 +18,7 @@ export default function ItemDescription() {
         const res = await axios.get(`https://fakestoreapi.com/products/${id}`);
         setProduct(res.data);
       } catch (error) {
-        navigate(<ErrorPath />);
+        navigate('*');
       }
     };
     fetchProduct();
@@ -30,15 +30,15 @@ export default function ItemDescription() {
     addToCart(product);
     setShowAlert(true);
 
-    // Auto hide alert after 3 seconds
+    
     setTimeout(() => {
       setShowAlert(false);
-    }, 3000);
+    }, 2000);
   };
 
   return (
     <div className="container my-5">
-      {/* ✅ Bootstrap Alert */}
+      
       {showAlert && (
         <div className="alert alert-success alert-dismissible fade show" role="alert">
           <strong>{product.title}</strong> has been added to your cart!

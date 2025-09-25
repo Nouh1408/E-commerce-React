@@ -1,55 +1,62 @@
-import React, { useContext } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { CartContext } from '../CartContext/CartContext.jsx'; 
+import React, { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { CartContext } from "../CartContext/CartContext.jsx";
+import { CiShoppingCart } from "react-icons/ci";
+import { IoStorefrontSharp } from "react-icons/io5";
 
 export default function Navbar() {
-  const { cart } = useContext(CartContext); 
+  const { cart } = useContext(CartContext);
 
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg bg-dark border-bottom box-shadow">
-        <div className="container">
-          <Link className="navbar-brand text-light" to={'/'}>
-            <img src="/vite.svg" width={30} className="me-2" alt="logo" /> 
-            Shopping Store
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+      <div className="container">
+        {/* Brand */}
+        <Link className="navbar-brand fw-bold d-flex align-items-center" to={"/"}>
+          <IoStorefrontSharp className="me-2 fs-4 text-warning" />
+          Online Store
+        </Link>
+
+        {/* Toggler */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Links */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav m-auto">
+            <li className="nav-item">
+              <NavLink end className="nav-link px-3" to={"/"}>
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link px-3" to={"/product"}>
+                Products
+              </NavLink>
+            </li>
+          </ul>
+
+          {/* Cart */}
+          <NavLink
+            to={"/cart"}
+            className="btn btn-outline-success d-flex align-items-center"
           >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav m-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <NavLink className="nav-link text-light" to={"/"}>
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link text-light" to={"/product"}>
-                  Products
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link text-light" to={"/cart"}>
-                  Cart 
-                  {cart.length > 0 && (
-                    <span className="badge bg-success ms-2">
-                      {cart.length}
-                    </span>
-                  )}
-                </NavLink>
-              </li>
-            </ul>
-          </div>
+            <CiShoppingCart className="me-2 fs-5" />
+            Cart
+            {cart.length > 0 && (
+              <span className="badge bg-success ms-2">{cart.length}</span>
+            )}
+          </NavLink>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }

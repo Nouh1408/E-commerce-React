@@ -5,7 +5,7 @@ export const CartContext = createContext();
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
 
-  // Add item or increase quantity
+  
   function addToCart(product) {
     setCart((prevCart) => {
       const existingItem = prevCart.find((item) => item.id === product.id);
@@ -21,7 +21,7 @@ export function CartProvider({ children }) {
     });
   }
 
-  // Decrease quantity (remove if 0)
+  
   function decreaseQuantity(productId) {
     setCart((prevCart) =>
       prevCart
@@ -30,11 +30,11 @@ export function CartProvider({ children }) {
             ? { ...item, quantity: item.quantity - 1 }
             : item
         )
-        .filter((item) => item.quantity > 0) // remove if 0
+        .filter((item) => item.quantity > 0) 
     );
   }
 
-  // Remove item directly
+  
   function removeFromCart(productId) {
     setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
   }

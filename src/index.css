@@ -3,3 +3,16 @@ a.active{
     border-radius: 25px;
     color: black !important;
 }
+html, body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* pushes footer down if content is short */
+}
