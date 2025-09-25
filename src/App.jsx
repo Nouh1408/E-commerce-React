@@ -6,6 +6,7 @@ import ErrorPath from './Components/eRRORpATH/ErrorPath.jsx'
 import Products from './Components/Products/Products.jsx'
 import Cart from './Components/Cart/Cart.jsx'
 import ItemDescription from './Components/ItemDescription/ItemDescription.jsx'
+import {CartProvider} from './Components/CartContext/CartContext.jsx'
 
 
 export default function App() {
@@ -22,7 +23,12 @@ export default function App() {
         ])
   return (
     <div>
-      <RouterProvider router={router}/>
+      <CartProvider>
+        <RouterProvider router={router}/>
+        
+      </CartProvider>
+      
     </div>
+    //now cart and add to cart are available in any place in app
   )
 }
