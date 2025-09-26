@@ -10,13 +10,13 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
       <div className="container">
-        {/* Brand */}
+        
         <Link className="navbar-brand fw-bold d-flex align-items-center" to={"/"}>
           <IoStorefrontSharp className="me-2 fs-4 text-warning" />
           Online Store
         </Link>
 
-        {/* Toggler */}
+        
         <button
           className="navbar-toggler"
           type="button"
@@ -44,7 +44,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          {/* Cart */}
+          
           <NavLink
             to={"/cart"}
             className="btn btn-outline-success d-flex align-items-center"
