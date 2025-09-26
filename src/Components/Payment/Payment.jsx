@@ -31,7 +31,7 @@ export default function Payment() {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="John Doe"
+                  placeholder=""
                   required
                 />
               </div>
@@ -41,7 +41,7 @@ export default function Payment() {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="123 Main St"
+                  placeholder=""
                   required
                 />
               </div>
@@ -52,7 +52,7 @@ export default function Payment() {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Cairo"
+                    placeholder=""
                     required
                   />
                 </div>
@@ -61,7 +61,7 @@ export default function Payment() {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="12345"
+                    placeholder=""
                     required
                   />
                 </div>
