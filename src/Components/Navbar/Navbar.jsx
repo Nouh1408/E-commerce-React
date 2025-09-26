@@ -29,7 +29,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Links */}
+      
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav m-auto">
             <li className="nav-item">
