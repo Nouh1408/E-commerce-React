@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { CartContext } from "../CartContext/CartContext.jsx";
+import { useNavigate } from "react-router-dom";
 
 export default function Cart() {
   const { cart, addToCart, decreaseQuantity } = useContext(CartContext);
+  const navigate = useNavigate();
 
-  // Calculate total
   const total = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
@@ -23,7 +24,6 @@ export default function Cart() {
                 key={item.id}
                 className="list-group-item d-flex align-items-center justify-content-between"
               >
-                {/* Product image */}
                 <img
                   src={item.image}
                   alt={item.title}
@@ -31,13 +31,10 @@ export default function Cart() {
                   className="me-3"
                 />
 
-                {/* Product title */}
                 <span className="flex-grow-1">{item.title}</span>
 
-                {/* Price */}
                 <span className="fw-bold me-3">EGP {item.price}</span>
 
-                {/* Quantity controls */}
                 <div className="d-flex align-items-center gap-2">
                   <button
                     className="btn btn-sm btn-outline-danger"
@@ -57,11 +54,19 @@ export default function Cart() {
             ))}
           </ul>
 
-          {/* Cart Total */}
-          <div className="d-flex justify-content-end">
+          {/* Total */}
+          <div className="d-flex justify-content-between align-items-center">
             <h4 className="fw-bold">
               Total: <span className="text-success">EGP {total.toFixed(2)}</span>
             </h4>
+
+            {/* Proceed to Payment */}
+            <button
+              className="btn btn-primary"
+              onClick={() => navigate("/payment")}
+            >
+              Proceed to Payment
+            </button>
           </div>
         </>
       )}
