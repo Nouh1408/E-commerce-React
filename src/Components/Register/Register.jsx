@@ -54,7 +54,7 @@ export default function Register() {
                   value={form.name}
                   onChange={handleChange}
                   className="form-control"
-                  placeholder="Your name"
+                  placeholder="name"
                   required
                 />
               </div>
@@ -67,7 +67,7 @@ export default function Register() {
                   value={form.email}
                   onChange={handleChange}
                   className="form-control"
-                  placeholder="you@example.com"
+                  placeholder="email"
                   required
                 />
               </div>
@@ -80,7 +80,7 @@ export default function Register() {
                   value={form.password}
                   onChange={handleChange}
                   className="form-control"
-                  placeholder="••••••••"
+                  placeholder="password"
                   required
                 />
               </div>

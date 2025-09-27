@@ -62,7 +62,7 @@ export default function Navbar() {
 
           
           <div className="d-flex align-items-center gap-2">
-            {/* Cart */}
+            
             <NavLink
               to={"/cart"}
               className="btn btn-outline-success d-flex align-items-center position-relative"
