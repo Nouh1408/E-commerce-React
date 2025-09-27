@@ -14,5 +14,5 @@ html, body {
 }
 
 main {
-  flex: 1; /* pushes footer down if content is short */
+  flex: 1; 
 }

@@ -21,7 +21,7 @@ export default function Login() {
     );
 
     if (!user) {
-      alert("Invalid credentials ❌");
+      alert("user dosn't exist");
       return;
     }
 
