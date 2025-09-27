@@ -28,7 +28,6 @@ export default function Register() {
   return (
     <div className="container-fluid vh-100">
       <div className="row h-100">
-        {/* Left image side */}
         <div className="col-md-6 d-none d-md-flex p-0 h-100">
           <img
             src={img1}
@@ -38,7 +37,7 @@ export default function Register() {
           />
         </div>
 
-        {/* Right form side */}
+        
         <div className="col-md-6 d-flex align-items-center justify-content-center bg-light h-100">
           <div className="card shadow-lg p-5 w-100" style={{ maxWidth: "420px" }}>
             <h2 className="mb-3 text-center fw-bold">Create Account ✨</h2>

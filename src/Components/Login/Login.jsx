@@ -45,7 +45,7 @@ export default function Login() {
         
         <div className="col-md-6 d-flex align-items-center justify-content-center bg-light h-100">
           <div className="card shadow-lg p-5 w-100" style={{ maxWidth: "420px" }}>
-            <h2 className="mb-3 text-center fw-bold">Welcome Back 👋</h2>
+            <h2 className="mb-3 text-center fw-bold">Welcome Back </h2>
             <p className="text-muted text-center mb-4">
               Login to continue shopping
             </p>
@@ -59,7 +59,7 @@ export default function Login() {
                   value={form.email}
                   onChange={handleChange}
                   className="form-control"
-                  placeholder="you@example.com"
+                  placeholder="email"
                   required
                 />
               </div>
@@ -72,7 +72,7 @@ export default function Login() {
                   value={form.password}
                   onChange={handleChange}
                   className="form-control"
-                  placeholder="••••••••"
+                  placeholder="pasword"
                   required
                 />
               </div>

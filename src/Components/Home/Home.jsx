@@ -133,7 +133,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Featured Products */}
+      
       <div className="bg-light py-5" id="products">
         <div className="container">
           <h2 className="text-center text-success fw-bold mb-5">

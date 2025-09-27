@@ -54,13 +54,13 @@ export default function Cart() {
             ))}
           </ul>
 
-          {/* Total */}
+          
           <div className="d-flex justify-content-between align-items-center">
             <h4 className="fw-bold">
               Total: <span className="text-success">EGP {total.toFixed(2)}</span>
             </h4>
 
-            {/* Proceed to Payment */}
+            
             <button
               className="btn btn-primary"
               onClick={() => navigate("/payment")}

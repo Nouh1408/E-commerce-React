@@ -25,13 +25,13 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
       <div className="container">
-        {/* Brand */}
+        
         <Link className="navbar-brand fw-bold d-flex align-items-center" to={"/"}>
           <IoStorefrontSharp className="me-2 fs-4 text-warning" />
           Online Store
         </Link>
 
-        {/* Toggler */}
+        
         <button
           className="navbar-toggler"
           type="button"
@@ -44,9 +44,9 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navbar Links */}
+        
         <div className="collapse navbar-collapse" id="navbarNav">
-          {/* Center Links */}
+        
           <ul className="navbar-nav m-auto">
             <li className="nav-item">
               <NavLink end className="nav-link px-3" to={"/"}>
@@ -60,7 +60,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          {/* Right Side: Cart + Auth */}
+          
           <div className="d-flex align-items-center gap-2">
             {/* Cart */}
             <NavLink
@@ -76,7 +76,7 @@ export default function Navbar() {
               )}
             </NavLink>
 
-            {/* Auth Buttons */}
+            
             {!user ? (
               <>
                 <NavLink to="/login" className="btn btn-outline-light">

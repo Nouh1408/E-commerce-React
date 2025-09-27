@@ -15,7 +15,7 @@ export default function Payment() {
 
       {isPaid ? (
         <div className="alert alert-success text-center fs-5 py-4 shadow">
-          ✅ Payment successful! <br /> Thank you for your purchase.
+           Payment successful! <br /> Thank you for your purchase.
         </div>
       ) : (
         <div className="row align-items-center">
@@ -93,7 +93,7 @@ export default function Payment() {
                 <div className="col-md-6">
                   <label className="form-label">CVV</label>
                   <input
-                    type="password"
+                    type="number"
                     className="form-control"
                     placeholder="123"
                     required
