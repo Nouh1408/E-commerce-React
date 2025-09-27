@@ -40,7 +40,7 @@ export default function Register() {
         
         <div className="col-md-6 d-flex align-items-center justify-content-center bg-light h-100">
           <div className="card shadow-lg p-5 w-100" style={{ maxWidth: "420px" }}>
-            <h2 className="mb-3 text-center fw-bold">Create Account ✨</h2>
+            <h2 className="mb-3 text-center fw-bold">Create Account </h2>
             <p className="text-muted text-center mb-4">
               Register to start your shopping journey
             </p>
